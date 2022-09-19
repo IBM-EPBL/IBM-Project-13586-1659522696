@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>USER REGISTRATION FORM</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div class="jumbotron text-center">
+        <h1>USER REGISTRATION</h1>
+        <h1><img src="node_modules/bootstrap-icons/icons/person-fill.svg" width="80" height="80"></h1>
+    </div>
+    <div class="container">
+        <form id="user-form">
+
+            <div class="container">
+                <label for="name" id="name-label">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name">
+            </div><br>
+
+            <div class="container">
+                <label for="email" id="email-label">Email:</label>
+                <input type="email" id="email" placeholder="name@example.com">
+            </div><br>
+
+            <div class="container">
+                <label for="mobile_no" id="mobile_no-label">Mobile:</label>
+                <input type="tel" id="mobile_no" placeholder="Example: 9812567129" pattern="[789][0-9]{9}">
+            </div><br>
+
+            <div class="container">
+                <label for="country" id="country-label">Country:</label>
+                <input type="text" id="country">
+            </div><br>
+
+            <div class="container">
+                <label for="state" id="state-label">State:</label>
+                <input type="text" id="state">
+            </div><br>
+
+            <div class="container">
+                <label for="city" id="city-label">City:</label>
+                <input type="text" id="city">
+            </div><br>
+
+        </form>
+    </div>
+</body>
+
+</html>
