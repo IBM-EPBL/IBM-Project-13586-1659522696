@@ -1,0 +1,66 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+html {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(rgba(0, 0, 0, 0.2), rgba(30, 40, 50, 0.5));
+}
+body,
+#root {
+  width: 100%;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-container {
+  width: 60%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.form__header {
+  font-size: 40px;
+  font-weight: bolder;
+}
+.form__fields {
+  display: flex;
+  flex-direction: column;
+}
+.form-field {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.field__label {
+  font-weight: bold;
+  font-size: 20px;
+  padding: 0 16px;
+}
+.field__box {
+  height: 24px;
+}
+.form__buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn--primary {
+  width: 10%;
+  background-color: rgb(10, 200, 100);
+  color: rgb(100, 20, 10);
+}
