@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title> Registration Page </title>
+    <link href={{url_for('static',filename="stylesheets/styles.css" )}} rel="stylesheet" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="navbar-div">
+            <h1 class="nav_heading">REGISTRATION PAGE</h1><br>
+            <img class="logo" src={{url_for('static',filename="node_modules/bootstrap-icons/icons/person-circle.svg" )}}
+                width="70px">
+        </div>
+    </nav>
+    <div class="form-container container rounded">
+        <form action="/" method="POST">
+            <div class="mb-3">
+                <label for="uname" class="form-label">Enter your username:</label>
+                <input type="text" class="form-control" id="uname" name="username" required>
+            </div>
+            <div class="mb-3">
+                <label for="pass" class="form-label">Enter your password:</label>
+                <input type="password" class="form-control" id="pass" name="password" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Enter your email address:</label>
+                <input type="mail" class="form-control" id="email" name="mail" required>
+            </div>
+            <div class="mb-3">
+                <label for="roll" class="form-label">Enter your register number:</label>
+                <input type="number" class="form-control" id="roll" name="regno" required>
+            </div>
+            <p class="text-muted" style="color:black">{{message}}</p><br>
+            <br>
+            <div class="mb-3 text-center">
+                <button type="submit" class="btn btn-secondary">REGISTER</button>
+                <button type="button" class="btn btn-secondary" onclick="window.location.href='/login'">LOGIN</button>
+                
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
