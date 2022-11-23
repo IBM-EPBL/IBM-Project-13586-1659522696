@@ -1,0 +1,81 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to top left, #0000cc 0%, #ff3399 100%);
+  background-attachment: fixed;
+  padding: 10px;
+}
+
+.container {
+  max-width: 700px;
+  width: 60%;
+  background: #fff;
+  padding: 25px 25px;
+  border-radius: 5px;
+}
+
+.container .title {
+  font-size: 25px;
+  font-weight: 800;
+  position: relative;
+}
+
+.container form .user-details {
+  display: inline;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+
+form .user-details .input-box {
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+
+.user-details .input-box .details {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.user-details .input-box input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 16px;
+}
+
+form .button{
+  height: 45px;
+  margin: 45px 0;
+  text-align: center;
+}
+
+form .button input {
+  height: 100%;
+  width: 40%;
+  outline: none;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  background: linear-gradient(to top left, #4848e6 0%, #ff3399 100%);
+}
+
+form .button input:hover{
+  background: linear-gradient(to top left, #0000cc 0%, #a00b56 100%);
+}
+
