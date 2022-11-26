@@ -1,0 +1,20 @@
+ apiVersion: apps/v1
+ kind: Deployment
+ metadata:
+   name: flasknode
+ spec:
+   replicas: 1
+   selector:
+     matchLabels:
+       app: flasknode
+   template:
+     metadata:
+       labels:
+         app: flasknode
+     spec:
+       containers:
+       - name: flasknode
+         image: us.icr.io/covidtracker_ns/new_repo:latest
+         imagePullPolicy: Always
+         ports:
+         - containerPort: 5000
