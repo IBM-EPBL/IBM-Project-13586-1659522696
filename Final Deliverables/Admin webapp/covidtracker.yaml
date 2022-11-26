@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: covidtracker
+  name: covidtracker2
 spec:
   selector:
-    app: covidtracker
+    app: covidtracker2
   ports:
   - port: 5000
   type: NodePort
@@ -12,22 +12,22 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: covidtracker
+  name: covidtracker2
   labels:
-    app: covidtracker
+    app: covidtracker2
 spec:
   selector:
     matchLabels:
-      app: covidtracker
+      app: covidtracker2
   replicas: 1
   template:
     metadata:
       labels:
-        app: covidtracker
+        app: covidtracker2
     spec:
       containers:
-      - name: covidtracker
-        image: us.icr.io/covidtracker_ns/new_repo:latest
+      - name: covidtracker2
+        image: de.icr.io/covidtracker_ns2/new_repo2:latest
         ports:
         - containerPort: 5000
         env:
