@@ -2,3 +2,4 @@ flask
 ibm_db
 sendgrid
 flask_mail
+python-dotenv
