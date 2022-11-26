@@ -48,7 +48,6 @@ def login():
 #* Route to home
 @app.route('/home', methods=['GET', 'POST'])
 def home():
-    global userid
     msg = ''
 
     if request.method == 'POST':
@@ -64,13 +63,17 @@ def home():
         if account:
             session['loggedin'] = True
             session['id'] = account['NAME']
-            userid = account['NAME']
             session['UserName'] = account['NAME']
             msg = 'Logged in Successfully!'
             return render_template('home.html', user = username)
         else:
             msg = 'Incorrect UserName or Password!'
             return render_template('index.html', msg = msg)
+    elif "loggedin" in session:
+        return render_template('home.html', user = session['UserName'])
+    else:
+        msg = 'Logged out!'
+        return render_template('index.html', msg = msg)
 
 #* Route to logout
 @app.route('/logout')

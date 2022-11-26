@@ -5,12 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}"> -->
     <title>Covid Stats</title>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">Containment Zone Alert System</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,33 +35,29 @@
           </nav>
     </header><br><br><br>
     <footer>
-      <div class="container d-flex flex-wrap text-center justify-content-evenly align-self-center position-relative">
-        <div class="card" style="width: 18rem;"><br>
-          <img src="{{ url_for('static', filename='images/addLocation.png')}}" class="card-img-top" alt="addLocation" height="270rem">
+      <div class="container d-flex flex-wrap text-center justify-content-sm-between align-content-between align-self-center position-relative">
+        <div class="card p-2 m-2" style="width: 18rem"><br>
           <div class="card-body">
             <h5 class="card-title">Add Locations</h5>
             <p class="card-text">New Containment Zones to be added</p>
             <a href="/zones/add" class="btn btn-primary">Add</a>
           </div> 
         </div>
-        <div class="card" style="width: 18rem;"><br>
-          <img src="{{ url_for('static', filename='images/updateLocation.png')}}" class="card-img-top" alt="updateLocation" height="270rem">
+        <div class="card p-2 m-2" style="width: 18rem"><br>
           <div class="card-body">
             <h5 class="card-title">Update Locations</h5>
             <p class="card-text">Old Containment Zones to be updated</p>
             <a href="/zones/update" class="btn btn-primary">Update</a>
           </div>
         </div>
-        <div class="card" style="width: 18rem;"><br>
-          <img src="{{ url_for('static', filename='images/displayLocation.png')}}" class="card-img-top" alt="displayLocation" height="270rem">
+        <div class="card p-2 m-2" style="width: 18rem"><br>
           <div class="card-body">
             <h5 class="card-title">Display Locations</h5>
             <p class="card-text">Displaying existing containment zones</p>
             <a href="/zones/display" class="btn btn-primary">Display</a>
           </div> 
         </div>
-        <div class="card" style="width: 18rem;"><br>
-          <img src="{{ url_for('static', filename='images/removeLocation.png')}}" class="card-img-top" alt="removeLocation" height="270rem">
+        <div class="card p-2 m-2" style="width: 18rem"><br>
           <div class="card-body">
             <h5 class="card-title">Delete Locations</h5>
             <p class="card-text">Old Containment Zones to be deleted</p>
