@@ -54,13 +54,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        /*
-        locations.add(new LatLng(13.1233271, 80.2003557));
-        locations.add(new LatLng(13.1263571, 80.2043957));
-        locations.add(new LatLng(13.1204371, 80.2083157));
-        locations.add(new LatLng(13.1173171, 80.2123157));
-        */
-
         setContentView(R.layout.activity_maps);
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
@@ -92,7 +85,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         enableUserLocation();
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://169.51.204.133:30653/")
+                .baseUrl("http://169.51.204.133:32440/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
